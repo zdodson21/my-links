@@ -8,7 +8,10 @@ function App() {
     <>
       <div className="site-wrapper">
         <h1>My Links</h1>
-        <LinkBox linkText="GitHub"/>
+        <LinkBox 
+          URL="https://github.com/zdodson21"
+          linkText="GitHub"
+        />
       </div>
     </>
   )

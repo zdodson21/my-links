@@ -6,7 +6,7 @@ function LinkBox(props) {
       <div className="link-box-wrapper">
         {/* TODO need image for site + alt text */}
         {/* TODO need anchor URL + text variable*/}
-        <a href="">{props.linkText}</a>
+        <a href={props.URL}>{props.linkText}</a>
       </div>
     </>
   )
