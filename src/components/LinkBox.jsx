@@ -1,4 +1,4 @@
-import './LinkBox.css'
+import '../styles/LinkBox.css'
 
 function LinkBox(props) {
   return (
