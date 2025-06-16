@@ -1,5 +1,7 @@
 :root {
-  color-scheme: light dark;
+  background-color: #121212;
+}
 
-  background-color: light-dark(white, black); /* TODO alter */
+p {
+  margin: 0px;
 }

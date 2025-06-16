@@ -1,17 +1,36 @@
 <script>
-  let props = $props();
+  let {href, src, alt, text, pixelated = false} = $props();
 </script>
 
-<div class="link-box">
-  <img src="{props.src}" alt="{props.alt}">
-  <p>
-    {props.text}
-  </p>
-</div>
+<a href="{href}" target="_blank" class="link-box">
+  <img src="{src}" alt="{alt}" class:pixelated>
+  <div class="text">
+    <p>{text}</p>
+  </div>
+</a>
 
 <style>
   .link-box {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     background-color: white;
     color: black;
+    padding: 12px;
+    border: 4px solid black;
+    border-radius: 25px;
+  }
+
+  img {
+    width: 70px;
+  }
+
+  .pixelated {
+    image-rendering: pixelated;
+  }
+
+  .text {
+    width: calc(100% - 70px);
+    text-align: center;
   }
 </style>
